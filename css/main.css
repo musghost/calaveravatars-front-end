@@ -1,0 +1,81 @@
+body{
+	margin-top: 40px;
+}
+.flowers{
+	width:193px;
+}
+header{
+	text-align:center; position:relative;
+}
+header img{
+	position:relative; width:580px; left:50%; margin-left:-600px; max-width:none;
+	margin-top: -40px;
+}
+#calavera{
+	margin-top:-120px;
+}
+.align-right{
+	text-align:right;
+}
+footer{
+	text-align:center;
+}
+.controls h3{
+	color: #767676;
+	font-size: 13px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.controls .advice{
+	color:#d73e92;
+}
+.controls ul{
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+.controls li{
+	display: inline-block;
+}
+.colors li + li{
+	margin-left: 30px;
+}
+.colors i{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background: url("../img/colors.png");
+	cursor: pointer;
+}
+.colors i.pink{
+	background-position: 0 0;
+}
+.colors i.orange{
+	background-position: -30px 0;
+}
+.colors i.blue{
+	background-position: -60px 0;
+}
+.colors i.green{
+	background-position: -90px 0;
+}
+.colors i.purple{
+	background-position: -120px 0;
+}
+
+.colors i.b1{
+	background-position: 0 -30px;
+}
+.colors i.b2{
+	background-position: -30px -30px;
+}
+.colors i.b3{
+	background-position: -60px -30px;
+}
+.colors i.b4{
+	background-position: -90px -30px;
+}
+.colors i.b5{
+	background-position: -120px -30px;
+}
