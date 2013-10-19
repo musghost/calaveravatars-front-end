@@ -1,6 +1,10 @@
 body{
 	margin-top: 40px;
 }
+@font-face{
+	font-family: 'myfont';
+	src: url('../fonts/font.ttf') format('truetype');
+}
 .flowers{
 	width:193px;
 }
@@ -8,11 +12,13 @@ header{
 	text-align:center; position:relative;
 }
 header img{
-	position:relative; width:580px; left:50%; margin-left:-600px; max-width:none;
+	position:relative; width:580px; left:50%; margin-left:-580px; max-width:none;
 	margin-top: -40px;
 }
-#calavera{
+.calavera{
 	margin-top:-120px;
+	max-width: 320px;
+	display: inline-block;
 }
 .align-right{
 	text-align:right;
@@ -25,7 +31,8 @@ footer{
 	font-size: 13px;
 	font-weight: 300;
 	text-align: center;
-	margin-bottom: 0px;
+	margin: 25px 0px 10px;
+	line-height: 16px;
 }
 .controls .advice{
 	color:#d73e92;
@@ -45,37 +52,102 @@ footer{
 	width: 30px;
 	height: 30px;
 	display: inline-block;
-	background: url("../img/colors.png");
 	cursor: pointer;
 }
-.colors i.pink{
-	background-position: 0 0;
+.colors i.c1{
+	background: #fcd800;
 }
-.colors i.orange{
-	background-position: -30px 0;
+.colors i.c2{
+	background: #248eac;
 }
-.colors i.blue{
-	background-position: -60px 0;
+.colors i.c3{
+	background: #844291;
 }
-.colors i.green{
-	background-position: -90px 0;
-}
-.colors i.purple{
-	background-position: -120px 0;
+.colors i.c4{
+	background: #c32127;
 }
 
 .colors i.b1{
-	background-position: 0 -30px;
+	background: #61af20;
 }
 .colors i.b2{
-	background-position: -30px -30px;
+	background: #c87926;
 }
 .colors i.b3{
-	background-position: -60px -30px;
+	background: #b81817;
 }
 .colors i.b4{
-	background-position: -90px -30px;
+	background: #fff;
+	border:1px solid #4d4d4d;
+	width: 28px;height: 28px;
 }
 .colors i.b5{
-	background-position: -120px -30px;
+	background: #4c4c4c;
+}
+.form{
+	text-align: center;
+	margin-top: 35px;
+}
+.form input, .form i{
+	display: inline-block;
+}
+.form input{
+	width: 190px;
+	height: 28px;
+	background: url("../img/input.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 0;
+	border: 0;
+	box-shadow: none;
+	text-align: center;
+	color: #fff;
+}
+.form input:hover{
+	box-shadow: none;
+}
+.form button{
+	background: url("../img/ok.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 96px;
+	height: 48px;
+	padding: 0;
+	border: 0;
+}
+.button{
+	position: relative;
+	text-align: center;
+}
+.button a{
+	position: absolute;
+	display: block;
+	background: url("../img/arrows.png");
+	background-repeat: no-repeat;
+	width: 9px;
+	height: 18px;
+	top: 40px;
+}
+.button a.left{
+	background-position: left;
+	left: 0;
+}
+.button a.right{
+	background-position: right;
+	right: 0;
+}
+.wait{
+	display: none;
+}
+.wait.show{
+	display: block;
+}
+#buttons{
+	min-height: 210px;
+}
+.text{
+	font-family: 'myfont';
+	position: absolute;
+    left: 200px;
+    top: 20px;
 }
