@@ -38,7 +38,16 @@
 				}
 			},
 			form = $("form[name=send]"),
-			textName = $(".text");
+			textName = $(".text"),
+			switchToSocial = function(img){
+				//$("").fadeOut();
+				$("#settings, #buttons").fadeOut(700,function(){
+					$(".download-link").attr("href", "");
+					$("#image").append(img);
+					$("#social").fadeIn();
+				});
+
+			};
 
 		buttons.eq(0).click(function(a){
 			a.preventDefault();
@@ -113,15 +122,15 @@
 					"bk": currentBackground
 				},
 				error: function(a,b){
+					alert("bu");
 				},
 				success: function(a){
-					
-					var img = new Image();
-					img.src = "http://localhost:3000/" + a.url.substr(7, a.url.length - 7);
-					alert(a.url.substr(7, a.url.length - 7));
-					img.onload = function(){
-						$("#result").append(img);
-					}
+					var image = new Image(),
+						imageURL = "http://localhost:3000/" + a.url.substr(7, a.url.length - 7);
+					image.onload = function(){
+						switchToSocial(image);
+					};
+					image.src = imageURL;
 				}
 			});
 		});

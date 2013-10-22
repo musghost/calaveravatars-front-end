@@ -14,7 +14,7 @@ header{
 	text-align:center; position:relative;
 }
 header img{
-	position:relative; width:580px; left:50%; margin-left:-580px; max-width:none;
+	position:relative; width:660px; left:50%; margin-left:-580px; max-width:none;
 	margin-top: -40px;
 }
 .calavera{
@@ -108,6 +108,11 @@ footer{
 	box-shadow: none;
 	text-align: center;
 	color: #fff;
+	font-family: Woodshop;
+	color: #f2499c;
+}
+.form input:focus{
+	box-shadow: none;
 }
 .form input:hover{
 	box-shadow: none;
@@ -136,11 +141,11 @@ footer{
 }
 .button a.left{
 	background-position: left;
-	left: 0;
+	left: -15px;
 }
 .button a.right{
 	background-position: right;
-	right: 0;
+	right: -20px;
 }
 .wait{
 	display: none;
@@ -191,6 +196,7 @@ footer{
 	-ms-transform: rotate(0deg) !important;
 	-o-transform: rotate(0deg) !important;
 	position: relative;
+	letter-spacing: 0 !important;
 }
 .text.deportista span{
 	width: 30px;
@@ -261,6 +267,16 @@ footer{
 .text.rockera{
 	top: -65px;
 	left: 230px;
+}
+.text.seniora span{
+	width: 30px;
+	height: 190px;
+	left: 0;
+	top: 0;
+}
+.text.seniora{
+	top: -70px;
+	left: 180px;
 }
 .text .ch1{
 	transform: rotate(-15deg);
@@ -352,4 +368,147 @@ footer{
 }
 .rockera.morada, .rockera.roja{
 	color: #fff;
+}
+.seniora.amarilla{
+	color: #b81817;
+}
+.seniora.aqua{
+	color: #844291;
+}
+.seniora.morada{
+	color: #f1b247;
+}
+.seniora.roja{
+	color: #f1b247;
+}
+#social{
+	text-align: center;
+	display: none;
+}
+.avatars{
+	height: 154px;
+	width: 400px;
+	display: inline-block;
+	background: url("../img/floral.png");
+	margin-bottom: 50px;
+	position: relative;
+	margin-top: 300px;
+}
+.avatars h3, .avatars h4{
+	color: #d93184;
+	font-family: Woodshop;
+	font-weight: normal;
+}
+.avatars h3{
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+.avatars ul{
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.avatars li{
+	padding: 0;
+	display: inline-block;
+}
+.avatars li + li{
+	margin-left: 50px;
+}
+.avatars li a{
+	display: inline-block;
+	background: url("../img/social.png");
+	width: 44px;
+	height: 53px;
+}
+.avatars li a.twitter{
+	background-position: -1px 0;
+}
+.avatars li a.facebook{
+	background-position: -46px 0;
+}
+.avatars h4{
+	margin: 0;
+	font-size: 15px;
+}
+.avatars .purple{
+	color: #7f50a7;
+}
+.avatars a{
+	color: #7f50a7;
+}
+.avatars li a:hover{
+	box-shadow: -2px -2px 3px 1px #d7c6e6; 
+}
+#image{
+	max-width: 350px;
+	position: absolute;
+	top: -420px;
+	left: 30px;
+}
+body > section{
+	margin-top: 60px;
+}
+.aux-header{
+	display: none;
+}
+.message{
+	margin-top: 20px;
+	text-align: center;
+	color: rgb(118, 118, 118);
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 16px;
+}
+@media (max-width: 1200px) and (min-width: 980px){
+	header img{
+		width: 500px;
+		margin-left: -480px;
+	}
+	.calavera{
+		margin-top: -80px;
+		width: 276px;
+		height: 276px;
+		display: inline-block;
+	}
+	.calavera img{
+		max-width: 250px;
+	}
+}
+@media (max-width: 978px) and (min-width: 768px){
+	.calavera{
+		margin-left: -65px;
+	}
+	.button a.left{
+		left: -85px;
+	}
+	.button a.right{
+		right: -100px;
+	}
+	.colors li + li {
+		margin-left: 10px;
+	}
+
+}
+@media (max-width: 978px){
+	header{
+		display: none;
+	}
+	body > section{
+		margin-top: 20px;
+	}
+	.flowers{
+		display: none;
+	}
+	.aux-header{
+		display: block;
+	}
+	.calavera{
+		margin-top: 0;
+	}
+	#buttons{
+		margin: 0 20px;
+	}
 }
